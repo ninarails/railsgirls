@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+root to: redirect('/ideas')
+  resources :ideas
   get 'pages/info'
 
   # The priority is based upon order of creation: first created -> highest priority.
